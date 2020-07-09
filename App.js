@@ -2,15 +2,21 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, TextInput, View,Button,Alert,
     Image} from 'react-native';
+import Settings from "./components/Settings";
+
+import 'primereact/resources/themes/nova-light/theme.css';
+import 'primereact/resources/primereact.min.css';
+import 'primeicons/primeicons.css';
+
 
 export default function App() {
   //return TestFunc();
   return ShowSettings();
 }
 
-function TestFunc(Name) {
-    var name;
-    name = Name;
+function TestFunc(props) {
+    //var name;
+    //name = Name;
     //name = 'Костя';
   return (
   <View style={styles.container}>
@@ -19,7 +25,7 @@ function TestFunc(Name) {
         source={{uri: "https://reactnative.dev/docs/assets/p_cat2.png"}}
         style={{width: 80, height: 80}}
     />
-    <Text style={styles.text}>Дратути, {name}!</Text>
+    <Text style={styles.text}>Дратути, {props.name}!</Text>
     <TextInput
         style={{
           height: 40,
@@ -28,12 +34,12 @@ function TestFunc(Name) {
           borderWidth: 0,
             color: 'lightgrey'
         }}
-        defaultValue={name}
-        onChangeText={text => name=text}
+        defaultValue={props.name}
+        onChangeText={text => props.name=text}
     />
       <Button
           title="Тыкни в меня!"
-          onPress={() => SetName(name)}
+          onPress={() => SetName(props.name)}
           style={{
               height: 40,
               borderColor: 'gray',
@@ -41,14 +47,21 @@ function TestFunc(Name) {
               backgroundColor: 'black'
           }}
       />
-    <Text style={styles.text}>Покедова, {name}!</Text>
+    <Text style={styles.text}>Покедова, {props.name}!</Text>
   </View>
   );
 }
 
 function SetName(text) {
-    Alert.alert('Тебя зовут '+text+'2?')
+    Alert.alert('Тебя зовут '+text+'?')
 }
+// const Show=(props)=>{
+//
+//     return (<View style={styles.container}> </View>);
+// };
+//
+// export default Show;
+
 //Список с товарами
 function ShowList() {
     return (
@@ -94,6 +107,8 @@ function ShowSettings() {
             source={{uri: "https://reactnative.dev/docs/assets/p_cat2.png"}}
             style={{width: 80, height: 80}}
         />
+        <Settings value={666+33}/>
+        <TestFunc name='Костя'/>
         <Text style={styles.text}>Дратути, настройки!</Text>
         <TextInput
             style={{
@@ -180,3 +195,5 @@ const styles = StyleSheet.create({
       color : 'white'
   }
 });
+
+
