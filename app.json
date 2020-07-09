@@ -1,0 +1,12 @@
+{
+  "name": "PriceListner2",
+  "displayName": "PriceListner2",
+  "expo": {
+    "name": "PriceListner2",
+    "slug": "PriceListner2",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
