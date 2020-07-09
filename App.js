@@ -47,7 +47,7 @@ function TestFunc(Name) {
 }
 
 function SetName(text) {
-    Alert.alert('Тебя зовут '+text+'?')
+    Alert.alert('Тебя зовут '+text+'2?')
 }
 //Список с товарами
 function ShowList() {
