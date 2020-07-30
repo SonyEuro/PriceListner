@@ -1,0 +1,34 @@
+{
+  "products": [
+    {
+      "uuid": "7cf69e3b-f942-4ed4-b1ab-c7880c9a546a",
+      "url": "https://www.sportmaster.ru/",
+      "price": 1413
+    },
+    {
+      "uuid": "2eea10b6-fe09-489f-8a19-5938e78fffb1",
+      "url": "https://www.dns-shop.ru/",
+      "price": 113
+    },
+    {
+      "uuid": "f1dc6390-b974-46fc-8923-b03c52099e8d",
+      "url": "https://www.technopoint.ru/",
+      "price": 1412
+    },
+    {
+      "uuid": "56dcfdd3-9f52-4755-a300-680d721a2b55",
+      "url": "https://www.ikea.com/ru/ru/",
+      "price": 143
+    },
+    {
+      "uuid": "c9235296-0b00-42ae-9df4-41f18f9aced0",
+      "url": "https://best.aliexpress.ru/affiliate/home.htm?lan=ru",
+      "price": 413
+    },
+    {
+      "uuid": "e4a5b04a-1586-47e8-8d73-d8ef0d778ca8",
+      "url": "https://www.ozon.ru/",
+      "price": 3
+    }
+  ]
+}

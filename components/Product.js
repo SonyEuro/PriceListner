@@ -9,13 +9,15 @@ class Product extends Component{
         super(props);
 
         this.state={
+            product:this.props.product
         };
     }
 
     render() {
         return(
             <View>
-                <Text>{this.props.title}</Text>
+                <Text>{"Адрес: "+this.state.product.url}</Text>
+                <Text>{"Цена: "+this.state.product.price}</Text>
             </View>
         );
     }
